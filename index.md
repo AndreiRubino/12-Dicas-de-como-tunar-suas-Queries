@@ -1,6 +1,7 @@
 # 12 Dicas de como tunar suas Queries
 
-Este é o segundo artigo (leia aqui o primeiro) com algumas dicas de como tunar suas Queries. As dicas abaixo não garantem por si só um melhor desempenho, cada query deve ser analisada a parte com base na sua necessidade.
+Este é o segundo artigo [Leia aqui o primeiro](https://andreirubino.github.io/16-Dicas-de-como-tunar-suas-Queries/)
+com algumas dicas de como tunar suas Queries. As dicas abaixo não garantem por si só um melhor desempenho, cada query deve ser analisada a parte com base na sua necessidade.
 
 -	Atenção em Queries que utilizam views pois o problema pode estar na view.
 -	Evite utilizar o ORDER BY no banco e procure fazer a ordenação na aplicação. 
