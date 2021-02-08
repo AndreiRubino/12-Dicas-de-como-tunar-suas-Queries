@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+# 12 Dicas de como tunar suas Queries
 
-You can use the [editor on GitHub](https://github.com/AndreiRubino/12-Dicas-de-como-tunar-suas-Queries/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Este é o segundo artigo (leia aqui o primeiro) com algumas dicas de como tunar suas Queries. As dicas abaixo não garantem por si só um melhor desempenho, cada query deve ser analisada a parte com base na sua necessidade.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AndreiRubino/12-Dicas-de-como-tunar-suas-Queries/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+-	Atenção em Queries que utilizam views pois o problema pode estar na view.
+-	Evite utilizar o ORDER BY no banco e procure fazer a ordenação na aplicação. 
+-	Utilize Sequence com Cache.
+-	Utilize a cláusula WITH em queries recursivas.
+-	Utilize UNION ALL em vez de UNION sempre que possível.
+-	Utilize Queries Hierárquicas em casos de auto relacionamento.
+-	Utilize variáveis BIND para queries que alterem somente o valor do parâmetro no where.
+-	Utilize o MERGE quando for preciso Inserir/Atualizar dados comparando dados de uma tabela ou instrução.
+-	Utilize o Index Oracle Text para busca em grandes textos. 
+-	Evite o Index Bitmap em colunas com alta cardinalidade.
+-	Utilize o SQL Loader para importações de grandes arquivos de dados.
+-	Utilize BULK COLLECT e BULK BINDING para operações em massa.
